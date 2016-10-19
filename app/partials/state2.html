@@ -1,0 +1,25 @@
+<div class="jumbotron text-center panel panel-default">
+	<div id ="heading">
+	<p id ="artwork"><img id= "poster" ng-src="{{vm.movieDetails.data.Poster}}"></p>
+	<!-- details -->
+	<div class="panel-body" id="text">
+	<p>Circa: {{vm.movieDetails.data.Year}}</p>
+	<p>Actors: {{vm.movieDetails.data.Actors}}</p>
+	<p>Genre: {{vm.movieDetails.data.Genre}}</p>
+	<p>Plot: {{vm.movieDetails.data.Plot}}</p>
+
+	<!-- takes you back to homepage  -->
+	<p id="homepage"><a ui-sref="state1">Nerd Landing</a></p>
+ </div>
+ </div>
+ </div>
+ <div ui-view></div>
+
+<!--  	<div class="panel panel-default col-sm-4" ng-repeat="title in vm2.movieData.data.Search">
+ -->
+
+
+ <!-- REVIEWER COMMENTS  -->
+<!--Reviewed by BL-->
+<!--Reviewed by JKL: ensure you have the correct string expressions inside of your curly brace -->
+<!--Reviewed by JK-->

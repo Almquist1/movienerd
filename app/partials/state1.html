@@ -1,0 +1,33 @@
+<!-- for movie input and resulting movies  -->
+<div class="form-group">
+		<div class="input-group">
+			<input type="text" class="form-control" ng-model="vm2.input">
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-info" ng-click="vm2.getMovieTitle(vm2.input)">Action!</button>
+			</span>
+	</div>
+</div>
+<div>
+<div class="col-sm-12">
+	<div class="panel panel-default col-sm-4" ng-repeat="title in vm2.movieData.data.Search">
+		<div class="panel-heading">{{title.Title}}</div>
+		<div class="panel-body text-center col-sm-12">
+			<div id="poster">
+				<img ng-src="{{title.Poster}}">
+				<div>circa {{title.Year}}</div>
+				<!-- more details -->
+				<a ui-sref="state2({imdbID: title.imdbID})">{{title.imdbID}}Get super chill</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- REVIEWER COMMENTS  -->
+<!--Reviewed by BL-->
+<!--Reviewed by JKL-->
+<!--Reviewed by JK: make sure that that imdbID is used as the variable that's passed to the movie.detail controller  -->
+
+
+
+

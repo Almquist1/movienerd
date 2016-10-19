@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movieApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Nerd</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/styles.css">
+    <!-- endinject -->    
+</head>
+
+
+<body>
+	<!-- will always return to homepage --> 
+    <a class="navbar-brand" href="#">Movie Nerd</a>
+
+    <div class="well" ui-view></div>
+
+  	<div id="poster">
+  	<!-- pulls from css rule to make landing graphic with pulse and hover animation,
+  	will also rerout to home  -->
+  	<p><a href="#">
+    WEBFLIX AND CHILL <div class="span2" style="display:none" showonhoverparent>
+  	</div>
+  	</a></p>
+
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+   
+    <!-- inject:js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/movie/movie.controller.js"></script>
+    <script src="/app/movie/movie.detail.controller.js"></script>
+    <script src="/app/movie/movie.service.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>
+
+
+<!-- REVIEWER COMMENTS  -->
+<!-- Reviewed by BL-->
+<!-- Reviewed by JKL -->
+<!-- Reviewed by JK -->
